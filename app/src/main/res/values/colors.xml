@@ -10,4 +10,7 @@
     <color name="bluedark">#3347B0</color>
     <color name="yellow">#FFC23D</color>
     <color name="cinza">#9E9FA4</color>
+    <color name="degrade1">#CFD4EA</color>
+    <color name="degrade2">#9FA9E1</color>
+    <color name="degrade3">#5A659F</color>
 </resources>

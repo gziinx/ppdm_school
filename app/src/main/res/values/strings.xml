@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Lion school</string>
     <string name="titulo">Lion School</string>
+    <string name="titulo2">Lion\nSchool</string>
     <string name="frase1">Find your favorite course</string>
     <string name="frase2">Get to your destination faster, study at the best vocational school in Brazil. Be the best version of yourself.</string>
     <string name="button1">Get Started</string>
+    <string name="field">Find your course</string>
+    <string name="curso">Courses</string>
+    <string name="ds">DS</string>
+    <string name="rds">RDS</string>
+    <string name="ele">ELE</string>
+    <string name="frase3">Desenvolvimento de Sistemas</string>
+    <string name="frase4">Learn to develop web and mobile applications.</string>
+    <string name="semestres">3 semesters</string>
 </resources>
