@@ -13,4 +13,8 @@
     <string name="frase3">Desenvolvimento de Sistemas</string>
     <string name="frase4">Learn to develop web and mobile applications.</string>
     <string name="semestres">3 semesters</string>
+    <string name="todos">Todos</string>
+    <string name="cursando">Cursando</string>
+    <string name="finalizado">Finalizado</string>
+    <string name="stu">Students List</string>
 </resources>

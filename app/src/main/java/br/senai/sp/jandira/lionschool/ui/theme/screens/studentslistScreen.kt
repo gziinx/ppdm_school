@@ -123,6 +123,7 @@ fun listScreen () {
                     },
                     modifier = Modifier
                         .fillMaxWidth(),
+                    shape = RoundedCornerShape(5.dp),
 
 
                     leadingIcon = {
@@ -148,8 +149,78 @@ fun listScreen () {
             ) {
                 Row(
                     modifier = Modifier
-                        .height(36.dp),
+                        .height(40.dp)
+                        .width(322.dp),
                     verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Box(
+                        modifier = Modifier
+                            .height(36.dp)
+                            .width(77.dp)
+                            .padding(top = 5.dp)
+                            .background(color = colorResource(R.color.bluedark), shape = RoundedCornerShape(24.dp)),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = stringResource(
+                                R.string.todos
+                            ),
+                            color = colorResource(
+                                R.color.white
+                            ),
+                            fontWeight = FontWeight.Normal,
+                            fontSize = 13.sp
+
+                        )
+                    }
+                    Box(
+                        modifier = Modifier
+                            .height(36.dp)
+                            .width(97.dp)
+                            .padding(top = 5.dp, start = 5.dp )
+                            .background(color = colorResource(R.color.yellow), shape = RoundedCornerShape(24.dp))
+                                ,contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = stringResource(
+                                R.string.cursando
+                            ),
+                            color = colorResource(
+                                R.color.white
+                            ),
+                            fontWeight = FontWeight.Normal,
+                            fontSize = 13.sp
+
+                        )
+                    }
+                    Box(
+                        modifier = Modifier
+                            .height(36.dp)
+                            .width(100.dp)
+                            .padding(top = 5.dp, start = 5.dp   )
+                            .background(color = colorResource(R.color.yellow), shape = RoundedCornerShape(24.dp))
+                             ,   contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = stringResource(
+                                R.string.finalizado
+                            ),
+                            color = colorResource(
+                                R.color.white
+                            ),
+                            fontWeight = FontWeight.Normal,
+                            fontSize = 13.sp
+
+                        )
+                    }
+
+                }
+                Row(
+                    modifier = Modifier
+                        .padding(top = 5.dp)
+                        .height(50.dp),
+                    verticalAlignment = Alignment.CenterVertically
+
                 ) {
                     Image(
                         modifier = Modifier
@@ -164,331 +235,20 @@ fun listScreen () {
                     )
                     Text(
                         text = stringResource(
-                            R.string.curso
+                            R.string.stu
                         ),
                         color = colorResource(
                             R.color.bluedark
                         ),
                         fontWeight = FontWeight.ExtraBold,
-                        fontSize = 20.sp,
+                        fontSize = 24.sp,
                     )
                 }
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(190.dp)
-                        .background(
-                            brush = Brush.horizontalGradient(
-                                colors = listOf(
-                                    colorResource(R.color.bluedark),
-                                    colorResource(R.color.degrade1)
-                                )
-                            ),
-                            shape = RoundedCornerShape(16.dp)
-                        )
-                        .border(1.dp, colorResource(R.color.yellow), shape = RoundedCornerShape(16.dp))
-                ){
-                    Column(
-                    ){
-                        Row (
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(top = 10.dp)
-                                .height(80.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Image(
-                                modifier = Modifier
-                                    .padding(start = 10.dp)
-                                    .size(101.dp),
-                                painter = painterResource(
-                                    R.drawable.programming1
-
-
-                                ),
-                                contentDescription = ""
-                            )
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = colorResource(
-                                    R.color.yellow
-                                ),
-                                fontWeight = FontWeight.ExtraBold ,
-                                fontSize = 76.sp,
-                                text = stringResource(
-                                    R.string.ds
-                                )
-                            )
-                        }
-                        Column (modifier = Modifier
-                            .padding(start = 25.dp)
-                        ) {
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = (
-                                        Color.White
-                                        ),
-                                fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp,
-                                text = stringResource(
-                                    R.string.frase3
-                                )
-                            )
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = (
-                                        Color.White
-                                        ),
-
-                                fontSize = 12.sp,
-                                text = stringResource(
-                                    R.string.frase4
-                                )
-                            )
-                            Row (
-                                modifier = Modifier
-                                    .height(45.dp),
-                                verticalAlignment = Alignment.Bottom) {
-                                Image(
-                                    modifier = Modifier
-
-                                        .size(16.dp),
-                                    painter = painterResource(
-                                        R.drawable.watchlater
-                                    ),
-                                    contentDescription = ""
-                                )
-                                Text(
-                                    modifier = Modifier
-                                    ,
-                                    color = (
-                                            Color.White
-                                            ),
-
-                                    fontSize = 12.sp,
-                                    text = stringResource(
-                                        R.string.semestres
-                                    )
-                                )
-                            }
-                        }
-                    }
-
-                }
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(190.dp)
-                        .background(
-                            brush = Brush.horizontalGradient(
-                                colors = listOf(
-                                    colorResource(R.color.bluedark),
-                                    colorResource(R.color.degrade2)
-                                )
-                            ),
-                            shape = RoundedCornerShape(16.dp)
-                        )
-                        .border(1.dp, colorResource(R.color.yellow), shape = RoundedCornerShape(16.dp))
-                ){
-                    Column(){
-                        Row (
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(top = 10.dp)
-                                .height(80.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Image(
-                                modifier = Modifier
-                                    .padding(start = 10.dp)
-                                    .size(101.dp),
-                                painter = painterResource(
-                                    R.drawable.internet1
-
-
-                                ),
-                                contentDescription = ""
-                            )
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = colorResource(
-                                    R.color.yellow
-                                ),
-                                fontWeight = FontWeight.ExtraBold ,
-                                fontSize = 76.sp,
-                                text = stringResource(
-                                    R.string.rds
-                                )
-                            )
-                        }
-                        Column (modifier = Modifier
-                            .padding(start = 25.dp)
-                        ) {
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = (
-                                        Color.White
-                                        ),
-                                fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp,
-                                text = stringResource(
-                                    R.string.frase3
-                                )
-                            )
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = (
-                                        Color.White
-                                        ),
-
-                                fontSize = 12.sp,
-                                text = stringResource(
-                                    R.string.frase4
-                                )
-                            )
-                            Row (
-                                modifier = Modifier
-                                    .height(45.dp),
-                                verticalAlignment = Alignment.Bottom) {
-                                Image(
-                                    modifier = Modifier
-
-                                        .size(16.dp),
-                                    painter = painterResource(
-                                        R.drawable.watchlater
-                                    ),
-                                    contentDescription = ""
-                                )
-                                Text(
-                                    modifier = Modifier
-                                    ,
-                                    color = (
-                                            Color.White
-                                            ),
-
-                                    fontSize = 12.sp,
-                                    text = stringResource(
-                                        R.string.semestres
-                                    )
-                                )
-                            }
-                        }
-                    }
-
-                }
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(190.dp)
-                        .background(
-                            brush = Brush.horizontalGradient(
-                                colors = listOf(
-                                    colorResource(R.color.degrade3),
-                                    colorResource(R.color.degrade1)
-                                )
-                            ),
-                            shape = RoundedCornerShape(16.dp)
-                        )
-                        .border(1.dp, colorResource(R.color.yellow), shape = RoundedCornerShape(16.dp))
-                ){
-                    Column(){
-                        Row (
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(top = 10.dp)
-                                .height(80.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Image(
-                                modifier = Modifier
-                                    .padding(start = 10.dp)
-                                    .size(101.dp),
-                                painter = painterResource(
-                                    R.drawable.lion_chip1
-
-
-                                ),
-                                contentDescription = ""
-                            )
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = colorResource(
-                                    R.color.yellow
-                                ),
-                                fontWeight = FontWeight.ExtraBold ,
-                                fontSize = 76.sp,
-                                text = stringResource(
-                                    R.string.ele
-                                )
-                            )
-                        }
-                        Column (modifier = Modifier
-                            .padding(start = 25.dp)
-                        ) {
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = (
-                                        Color.White
-                                        ),
-                                fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp,
-                                text = stringResource(
-                                    R.string.frase3
-                                )
-                            )
-                            Text(
-                                modifier = Modifier
-                                ,
-                                color = (
-                                        Color.White
-                                        ),
-
-                                fontSize = 12.sp,
-                                text = stringResource(
-                                    R.string.frase4
-                                )
-                            )
-                            Row (
-                                modifier = Modifier
-                                    .height(45.dp),
-                                verticalAlignment = Alignment.Bottom) {
-                                Image(
-                                    modifier = Modifier
-
-                                        .size(16.dp),
-                                    painter = painterResource(
-                                        R.drawable.watchlater
-                                    ),
-                                    contentDescription = ""
-                                )
-                                Text(
-                                    modifier = Modifier
-                                    ,
-                                    color = (
-                                            Color.White
-                                            ),
-
-                                    fontSize = 12.sp,
-                                    text = stringResource(
-                                        R.string.semestres
-                                    )
-                                )
-                            }
-                        }
-                    }
 
                 }
 
 
-            }
+
         }
     }
 }
